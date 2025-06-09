@@ -22,7 +22,19 @@ namespace CalculatorApp
             // Aggiorna l’espressione senza mai cancellare finché non si preme “=”
             expression += content switch
             {
-                "√" => "√",    // token radice
+              "rad" => "deg2rad(",
+              "deg" => "rad2deg(",
+              "π" => "pi",
+              "e" => "e",
+              "abs" => "abs(",
+              "%" => "/100",
+              "sin" => "sin(",
+              "asin" => "asin(",
+              "cos" => "cos(",
+              "acos" => "acos(",
+              "tan" => "tan(",
+              "atan" => "atan(",
+              "√" => "√",    // token radice
                 _ => content
             };
 

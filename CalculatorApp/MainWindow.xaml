@@ -83,31 +83,41 @@ Title="Calcolatrice" Width="330" Height="540" WindowStartupLocation="CenterScree
 
         <!-- HISTORY PANEL -->
         <Border x:Name="HistoryPanel" Grid.Row="1" Background="#55FFFFFF" CornerRadius="6" Padding="8" Margin="0 0 0 10" Visibility="Collapsed">
-            <ListBox x:Name="HistoryList" Background="Transparent" BorderThickness="0" Foreground="{StaticResource TextDark}" FontFamily="Consolas" FontSize="14"/>
+            <ListBox x:Name="HistoryList" MaxHeight="100" ScrollViewer.VerticalScrollBarVisibility="Auto" Background="Transparent" BorderThickness="0" Foreground="{StaticResource TextDark}" FontFamily="Consolas" FontSize="14"/>
         </Border>
 
         <!-- KEYPAD -->
-        <UniformGrid Grid.Row="2" Rows="6" Columns="4" Margin="0,0,0,10">
+        <UniformGrid Grid.Row="2" Rows="6" Columns="6" Margin="0,0,0,10">
             <Button Content="(" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content=")" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="√" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="^" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="sin" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="asin" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="7" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="8" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="9" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="/" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="cos" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="acos" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="4" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="5" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="6" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="*" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="tan" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="atan" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="1" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="2" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="3" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="-" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="rad" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="deg" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="0" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="." Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
             <Button Content="=" Style="{StaticResource CalcButtonStyle}" Click="Equals_Click"/>
             <Button Content="+" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="π" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
+            <Button Content="e" Style="{StaticResource CalcButtonStyle}" Click="Button_Click"/>
         </UniformGrid>
 
         <!-- UTILITY BUTTONS -->
